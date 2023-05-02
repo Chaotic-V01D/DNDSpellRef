@@ -15,5 +15,16 @@ let spellList = []
 spellList.push(new Spell("Acid Splash", 0, [0], [0], "A splash of acid erupts from a place of your choosing"))
 
 function sortSpells(method){
-  
+  let sorted = false;
+  while(!sorted){
+    sorted=true;
+    for(var i=0;i<spellList.length-1;i++){
+      if(!(spellList[i][method]<spellList[i+1][method])){
+        sorted=false;
+        let temp=spellList[i]
+        spellList[i+1]=spellList[i]
+        spellList[i]=temp;
+      }
+    }
+  }
 }
