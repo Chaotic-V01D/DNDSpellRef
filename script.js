@@ -1,6 +1,6 @@
-let spellClasses = [];//Classes with access to spells (sorted alphabetically)
-let dmgTypes = [];//Damage types of spells (sorted alphabetically)
-let schools = [];
+let spellClasses = ["Bard","Cleric","Druid","Paladin","Sorceror","Warlock","Wizard"];//Classes with access to spells (sorted alphabetically)
+let dmgTypes = ["Acid", "Bludgeoning", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Piercing", "Poison", "Psychic", "Radiant", "Slashing", "Thunder"];//Damage types of spells (sorted alphabetically)
+let schools = ["Abjuration", "Conjuration", "Divination", "Enchantment", "Evocation", "Illusion", "Necromancy", "Transmutation"];
 let Spell = function(name, dmg, school, level, ritual, conc, source, classOpt, description){
   this.name=name;//String, name of the spell
   this.dmg=dmg;//Int Array, the indexes of the dmg type that the spell does (an array bc some have multiple i.e. Chromatic Orb)
