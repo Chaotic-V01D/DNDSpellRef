@@ -1,7 +1,7 @@
 let spellClasses = ["Bard","Cleric","Druid","Paladin","Sorceror","Warlock","Wizard"];//Classes with access to spells (sorted alphabetically)
 let dmgTypes = ["Acid", "Bludgeoning", "Cold", "Fire", "Force", "Lightning", "Necrotic", "Piercing", "Poison", "Psychic", "Radiant", "Slashing", "Thunder"];//Damage types of spells (sorted alphabetically)
 let schools = ["Abjuration", "Conjuration", "Divination", "Enchantment", "Evocation", "Illusion", "Necromancy", "Transmutation"];
-let castTimeStamps=["1 reaction", "1 action", "1 minute", "10 minutes", "1 hour", "12 hours", "1 day"]
+let castTimeStamps=["1 reaction", "1 bonus action", "1 action", "1 minute", "10 minutes", "1 hour", "8 hours", "1 day"]
 let Spell = function(name, dmg, school, level, ritual, conc, castTime, source, classOpt, description){
   this.name=name;//String, name of the spell
   this.dmg=dmg;//Int Array, the indexes of the dmg type that the spell does (an array bc some have multiple i.e. Chromatic Orb)
